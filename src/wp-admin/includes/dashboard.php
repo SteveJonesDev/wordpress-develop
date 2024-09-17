@@ -1401,6 +1401,11 @@ function wp_print_community_events_markup() {
 					<?php _e( 'Cancel' ); ?>
 				</button>
 
+				<button class="community-events-clear button-link" type="button" aria-expanded="false">
+					<span class="dashicons dashicons-dismiss" aria-hidden="true"></span>
+					<?php _e( 'Clear Location' ); ?>
+				</button>
+
 				<span class="spinner"></span>
 			</form>
 		</div>
