@@ -1375,7 +1375,7 @@ function wp_print_community_events_markup() {
 
 				<button class="button-link community-events-toggle-location" aria-expanded="false">
 					<span class="dashicons dashicons-location" aria-hidden="true"></span>
-					<span class="community-events-location-edit"><?php _e( 'Select location' ); ?></span>
+					<span class="community-events-location-edit"><?php _e( 'Change location' ); ?></span>
 				</button>
 			</p>
 
