@@ -1420,6 +1420,8 @@ function wp_print_community_events_templates() {
 	?>
 
 	<script id="tmpl-community-events-attend-event-near" type="text/template">
+		<h3><?php _e( 'Local Events' ); ?></h3>
+		
 		<?php
 		printf(
 			/* translators: %s: The name of a city. */
