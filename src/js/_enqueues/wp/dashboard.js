@@ -383,7 +383,6 @@ jQuery( function( $ ) {
 
 			if ( 'hide' === action ) {
 				$toggleButton.attr( 'aria-expanded', 'false' );
-				$cancelButton.attr( 'aria-expanded', 'false' );
 				$form.attr( 'aria-hidden', 'true' );
 				/*
 				 * If the Cancel button has been clicked, bring the focus back
@@ -395,7 +394,6 @@ jQuery( function( $ ) {
 				}
 			} else {
 				$toggleButton.attr( 'aria-expanded', 'true' );
-				$cancelButton.attr( 'aria-expanded', 'true' );
 				$form.attr( 'aria-hidden', 'false' );
 			}
 		},

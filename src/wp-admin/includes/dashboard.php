@@ -1397,11 +1397,11 @@ function wp_print_community_events_markup() {
 
 				<?php submit_button( __( 'Submit' ), 'secondary', 'community-events-submit', false ); ?>
 
-				<button class="community-events-cancel button-link" type="button" aria-expanded="false">
+				<button class="community-events-cancel button-link" type="button">
 					<?php _e( 'Cancel' ); ?>
 				</button>
 
-				<button class="community-events-clear button-link" type="button" aria-expanded="false">
+				<button class="community-events-clear button-link" type="button">
 					<span class="dashicons dashicons-dismiss" aria-hidden="true"></span>
 					<?php _e( 'Clear Location' ); ?>
 				</button>
