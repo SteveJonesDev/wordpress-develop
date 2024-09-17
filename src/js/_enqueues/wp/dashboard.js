@@ -344,6 +344,30 @@ jQuery( function( $ ) {
 					location: location
 				});
 			});
+			
+			/**
+			 * Clears the location input field and resets the events.
+			 */
+			$container.on( 'click', '.community-events-clear', function( event ) {
+                event.preventDefault();
+
+				// Clear the input field and focus back on the location input.
+                $( '#community-events-location' ).val( '' ).trigger( 'focus' );
+				
+				// Reset the cache.
+				if (communityEventsData.cache) {
+					communityEventsData.cache.location = false;
+					communityEventsData.cache.events = [];
+				}
+				
+				// Render the empty state.
+				app.renderEventsTemplate( {
+					'location' : false,
+					'events'   : [],
+					'error'    : false
+				}, 'user' );
+
+            });
 
 			if ( communityEventsData && communityEventsData.cache && communityEventsData.cache.location && communityEventsData.cache.events ) {
 				app.renderEventsTemplate( communityEventsData.cache, 'app' );
